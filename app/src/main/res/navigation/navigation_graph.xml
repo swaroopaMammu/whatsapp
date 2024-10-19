@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/chatListFragment">
+
+    <fragment
+        android:id="@+id/callsFragment"
+        android:name="com.example.whatsapp.calls.CallsFragment"
+        android:label="fragment_calls"
+        tools:layout="@layout/fragment_calls" />
+    <fragment
+        android:id="@+id/updatesFragment"
+        android:name="com.example.whatsapp.updates.UpdatesFragment"
+        android:label="fragment_updates"
+        tools:layout="@layout/fragment_updates" />
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.example.whatsapp.chats.ui.view.ChatListFragment"
+        tools:layout="@layout/fragment_chat_list"
+        android:label="chatListFragment" />
+    <fragment
+        android:id="@+id/communitiesFragment"
+        android:name="com.example.whatsapp.communities.CommunitiesFragment"
+        android:label="fragment_communities"
+        tools:layout="@layout/fragment_communities" />
+</navigation>
